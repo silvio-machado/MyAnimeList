@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Users page</title>
+  <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+</head>
+<body>
+  <div class="shower">
+
+    {% if animes %}
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Style</th>
+      </thead>
+      {% for acc in animes %}
+      <tr>
+        <td>{{acc.name}}</td>
+        <td>{{acc.style}}</td>
+      </tr>
+      {% endfor %}
+      {% else %}
+      <p>Access error!!!</p>
+    </table>
+    {% endif%}
+
+    
+    {% if style %}
+    <table>
+      <thead>
+        <th>Available styles</th>
+      </thead>
+      {% for acc in style %}
+      <tr>
+        <td>{{acc.top_name}}</td>
+      </tr>
+      {% endfor %}
+      {% else %}
+      <p>There's no styles to show!!!</p>
+      {% endif %}
+    </table>
+  </div>
+</body>
+</html>
