@@ -1,5 +1,5 @@
 from django.contrib import admin
-from mal.models import(Topic, Animes)
+from myApp.mal.models import(Topic, Animes)
 
 class AnimesAdmin(admin.ModelAdmin):
     list_display = ('name',)

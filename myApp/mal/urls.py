@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from mal import views
+from myApp.mal import views
 
 app_name = 'mal'
 

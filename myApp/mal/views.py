@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from mal.forms import NewAnimeForm
-from mal.models import Topic
-from mal.models import Animes
+from myApp.mal.forms import NewAnimeForm
+from myApp.mal.models import Topic
+from myApp.mal.models import Animes
 
 def index(request):
     return HttpResponse("Project Index.")

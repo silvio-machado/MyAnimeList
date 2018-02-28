@@ -17,11 +17,11 @@ from django.conf.urls import url
 from django.urls import include
 from django.contrib import admin
 from django.urls import path
-from mal import views
+from myApp.mal import views
 
 
 urlpatterns = [
     url('^$', views.index, name='index'),
-    url('^mal/', include('mal.urls')),
+    url('^mal/', include('myApp.mal.urls')),
     path('admin/', admin.site.urls),
 ]

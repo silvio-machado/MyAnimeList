@@ -1,5 +1,5 @@
 from django import forms
-from mal.models import Animes
+from myApp.mal.models import Animes
 
 class NewAnimeForm(forms.ModelForm):
     class Meta():
